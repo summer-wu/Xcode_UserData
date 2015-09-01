@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>//用[self class]会跳出提示
+[NSObject classes];//查看系统中所有的类
+[AppDelegate properties];//获取AppDelegate类独有的properties，包括私有的
+[AppDelegate instanceVariables];//获取AppDelegate这个类的独有的实例变量，不会显示父类的
+[AppDelegate classMethods];//获取AppDelegate独有的类方法
+[AppDelegate instanceMethods];//同上
+[AppDelegate protocols]; //遵从了哪些协议
+[AppDelegate descriptionForProtocol:@protocol(UIApplicationDelegate)]; //必须编译才行！lists @required, @optional methods and @properties
+[AppDelegate parentClassHierarchy]; //获取类的继承关系</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>2BBB0BA3-4875-4983-B2C6-571C4ED64720</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>DLIntrospection</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

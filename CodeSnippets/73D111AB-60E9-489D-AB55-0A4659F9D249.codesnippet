@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>NSManagedObjectContext *context = &lt;#Managed object context#&gt;;
+NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+// Configure the request's entity, and optionally its predicate.
+NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"&lt;#Sort key#&gt;" ascending:YES];
+NSArray *sortDescriptors = [[NSArray alloc] initWithObjects:sortDescriptor, nil];
+[fetchRequest setSortDescriptors:sortDescriptors];
+[sortDescriptors release];
+[sortDescriptor release];
+
+NSFetchedResultsController *controller = [[NSFetchedResultsController alloc]
+                                          initWithFetchRequest:fetchRequest
+                                          managedObjectContext:context
+                                          sectionNameKeyPath:nil
+                                          cacheName:@"&lt;#Cache name#&gt;"];
+[fetchRequest release];
+
+NSError *error;
+BOOL success = [controller performFetch:&amp;error];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>73D111AB-60E9-489D-AB55-0A4659F9D249</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>CoreData NSFetchedResultsController</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>[ActionSheetDatePicker showPickerWithTitle:@"课程开始时间"
+                                    datePickerMode:UIDatePickerModeDateAndTime selectedDate:[NSDate date]
+                                       minimumDate:[NSDate date]
+                                       maximumDate:nil doneBlock:^(ActionSheetDatePicker *picker, id selectedDate, id origin) {
+                                           //donw
+                                       } cancelBlock:^(ActionSheetDatePicker *picker) {
+                                           //cancel
+                                       } origin:tableview];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>0E39C169-3C5C-43B9-9DAE-E9DDE8EB9DDE</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>ActionSheetDatePicker</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

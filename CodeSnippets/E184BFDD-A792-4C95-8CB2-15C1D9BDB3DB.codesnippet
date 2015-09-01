@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    if (self.view.width&gt;320) {//如果针对不同屏幕修改宽度
+        for (NSLayoutConstraint * c in courseLocation.constraints) {
+            if (c.firstAttribute==NSLayoutAttributeWidth) {
+                c.constant+=self.view.width-320-10;
+            }
+        }
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>E184BFDD-A792-4C95-8CB2-15C1D9BDB3DB</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>修改constraint</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

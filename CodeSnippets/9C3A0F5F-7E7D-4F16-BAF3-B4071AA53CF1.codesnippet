@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>showError</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>[Tools showError:[NSError errorWithDomain:kErrorDomain code:-2 userInfo:@{NSLocalizedDescriptionKey:@"写入文件出错，ErrorCode：-2"}]];
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>9C3A0F5F-7E7D-4F16-BAF3-B4071AA53CF1</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>showError</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>showError</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

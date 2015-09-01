@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>didFinishLaunchingWithOptions</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    //打印运行目录
+    BLog(@"%@",NSHomeDirectory());
+    BLog(@"%@",[NSBundle mainBundle].bundlePath);
+    //-5 查看当前plis信息
+    NSLocale *currentLocale = [NSLocale currentLocale];
+    NSLog(@"Country Code is %@", [currentLocale objectForKey:NSLocaleCountryCode]);
+    NSLog(@"Language Code is %@", [currentLocale objectForKey:NSLocaleLanguageCode]);
+    NSString * infoplistPath=[[NSBundle mainBundle].bundlePath stringByAppendingPathComponent:@"info.plist"];
+    NSDictionary * d=[NSDictionary dictionaryWithContentsOfFile:infoplistPath];
+    BLog(@"info.plist:%@",d);
+    
+    //-1. 设置缓存
+    NSURLCache *URLCache = [[NSURLCache alloc] initWithMemoryCapacity:4 * 1024 * 1024 diskCapacity:20 * 1024 * 1024 diskPath:nil];
+    [NSURLCache setSharedURLCache:URLCache];
+    //1. 设置AppDelegate.window
+    self.window=[[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    UITabBarController * tab=[[UITabBarController alloc]init];
+    UIViewController * vca=[ViewController new];
+    UIViewController * vcb=[VC0 new];
+    [tab setViewControllers:@[vca,vcb]];
+    UINavigationController * nav=[[UINavigationController alloc]initWithRootViewController:tab];
+    
+    self.window.rootViewController=nav;
+    [self.window makeKeyAndVisible];
+    return YES;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>1B5BC5B1-10EF-4E31-B60C-E88CC062EF7F</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>didFinishLaunchingWithOptions</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

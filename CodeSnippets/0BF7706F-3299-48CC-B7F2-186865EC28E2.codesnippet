@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    NSDate * date = [NSDate date];
+    NSDateFormatter * dateFormatter = [[NSDateFormatter alloc] init ];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm"];
+    NSString * dateStr = [dateFormatter stringFromDate:date];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>0BF7706F-3299-48CC-B7F2-186865EC28E2</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>dateFormatter</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>[ActionSheetStringPicker showPickerWithTitle:@"请选择运动类型" rows:md.allValues initialSelection:0 doneBlock:^(ActionSheetStringPicker *picker, NSInteger selectedIndex, id selectedValue) {
+            //选择后保存到字典中
+            _sharedAddCourseModel.courseDict[@"sports_type"]=[_availableCourseTypeDict keyForValue:selectedValue];
+            //并且重新加载cell数据
+            [tableview reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+            //动画
+            ANIMATEFORIMAGEVIEW(imageView);
+        } cancelBlock:^(ActionSheetStringPicker *picker) {
+            ANIMATEFORIMAGEVIEW(imageView);
+        } origin:tableview]</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>55F081D8-3CD4-4E57-8305-B0201CC181D2</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>ActionSheetStringPicker</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

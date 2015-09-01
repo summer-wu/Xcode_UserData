@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>make.top.equalTo(superview.mas_top).with.offset(padding.top); //with is an optional semantic filler
+make.left.equalTo(superview.mas_left).with.offset(padding.left);
+make.bottom.equalTo(superview.mas_bottom).with.offset(-padding.bottom);
+make.right.equalTo(superview.mas_right).with.offset(-padding.right);
+make.edges.equalTo(superview).with.insets(padding);
+make.centerX.lessThanOrEqualTo(view2.mas_left);
+make.left.greaterThanOrEqualTo(label);
+make.left.greaterThanOrEqualTo(label.mas_left);
+make.width.greaterThanOrEqualTo(@200);
+make.width.lessThanOrEqualTo(@400)
+make.top.mas_equalTo(42);
+make.height.mas_equalTo(20);
+make.size.mas_equalTo(CGSizeMake(50, 100));
+make.edges.mas_equalTo(UIEdgeInsetsMake(10, 0, 10, 0));
+make.left.mas_equalTo(view).mas_offset(UIEdgeInsetsMake(10, 0, 10, 0));
+make.left.equalTo(@[view1, @100, view3.right]);
+make.top.equalTo(label.mas_top).with.priority(600);
+
+// make top, left, bottom, right equal view2
+make.edges.equalTo(view2);
+// make top = superview.top + 5, left = superview.left + 10,
+//bottom = superview.bottom - 15, right = superview.right - 20
+make.edges.equalTo(superview).insets(UIEdgeInsetsMake(5, 10, 15, 20))
+
+
+// make width and height greater than or equal to titleLabel
+make.size.greaterThanOrEqualTo(titleLabel)
+// make width = superview.width + 100, height = superview.height - 50
+make.size.equalTo(superview).sizeOffset(CGSizeMake(100, -50))
+
+
+// make centerX and centerY = button1
+make.center.equalTo(button1)
+// make centerX = superview.centerX - 5, centerY = superview.centerY + 10
+make.center.equalTo(superview).centerOffset(CGPointMake(-5, 10))
+
+
+// All edges but the top should equal those of the superview
+make.left.right.and.bottom.equalTo(superview);
+make.top.equalTo(otherView);
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>BB6DDC4E-1030-4F36-AD8B-EB0AF4E24800</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Masonry_make_example_code</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

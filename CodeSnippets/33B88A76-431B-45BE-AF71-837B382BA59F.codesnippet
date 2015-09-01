@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>Preprocessor</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>-(UITableViewCell *)autoHeightTextViewCellInTableView:(UITableView *)tableview{
+    UITableViewCell * cell=[tableview dequeueReusableCellWithIdentifier:ID_LABELANDTEXTVIEW];
+    //找到label和textView，并添加到_cellViewsArray中。
+    UILabel * label=(UILabel *)[cell viewWithTag:61300];
+    UIPlaceHolderTextView * textView=(UIPlaceHolderTextView *)[cell viewWithTag:61301];
+    NSDictionary * d=@{KEY_CELL:cell,KEY_GEOLOCATION:label,KEY_DETAILLOCATION_TEXTVIEW:textView};
+    [_cellViewsArray addObject:d];
+    //修改值
+    label.text=@"详细地址:";
+    [label setFont:[UIFont systemFontOfSize:14]];
+    textView.placeholder=@"请在此输入详细地址";
+    textView.layer.borderWidth=1;
+    BLog(@"height:%f",textView.contentSize.height);
+    BLog(@"text:%@",textView.text);
+    [textView addObserver:self forKeyPath:@"contentSize"
+                  options:NSKeyValueObservingOptionOld | NSKeyValueObservingOptionNew
+                  context:nil];
+    return cell;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>33B88A76-431B-45BE-AF71-837B382BA59F</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>autoHeightTextViewCellInTableView</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

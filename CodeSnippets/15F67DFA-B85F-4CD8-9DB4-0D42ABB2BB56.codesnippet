@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>MBProgress+JiaoLianAPIClient</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string> [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+JiaoLianAPIClient * client=[JiaoLianAPIClient sharedJiaoLianAPIClient];
+[client getOneApplyCourseInfoWithID:courseOld.course_id Block:^(NSDictionary *json, NSError *error) {
+    [MBProgressHUD hideHUDForView:self.view animated:YES];
+    if(json&amp;&amp;[@1 compare:json[@"status"]]==NSOrderedSame){
+        //成功
+        [self.navigationController presentViewController:nc animated:YES completion:^{
+            //do nothing
+        }];
+        return;
+    }else{
+        //失败
+        return;
+    }
+}];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>15F67DFA-B85F-4CD8-9DB4-0D42ABB2BB56</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>MBProgress+JiaoLianAPIClient</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>MBProgress+JiaoLianAPIClient</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

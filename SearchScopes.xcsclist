@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SearchScopes
+   version = "1.1">
+   <Scope
+      name = ".m"
+      predicate = "name ENDSWITH &quot;.m&quot;"
+      uuid = "AD48D837-7238-4247-A40A-91627164B41F">
+   </Scope>
+   <Scope
+      name = "My Scope"
+      predicate = "location_workspace == &quot;&quot;"
+      uuid = "592EF16F-3435-40D2-9289-C173EF5E2CD2">
+   </Scope>
+   <Scope
+      name = ".h"
+      predicate = "name.pathExtension == &quot;.h&quot;"
+      uuid = "9AD08D8C-EA4C-4B5E-9B33-00F6FCD3CBB9">
+   </Scope>
+   <Scope
+      name = "AppDelegate.m"
+      predicate = "name == &quot;AppDelegate.m&quot;"
+      uuid = "24E80404-CF8A-41BC-BFCE-548B76D1E6BE">
+   </Scope>
+   <Scope
+      name = "storyboar"
+      predicate = "name CONTAINS &quot;storyboard&quot;"
+      uuid = "9E39A702-3D3C-4FBC-B497-2092DC1F68EA">
+   </Scope>
+</SearchScopes>
