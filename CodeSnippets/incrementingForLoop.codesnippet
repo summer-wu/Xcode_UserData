@@ -3,19 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>definePO</string>
+	<string>fori</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>TopLevel</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>#define PO(x) NSLog(@"%s = %@", #x, x);</string>
+	<string>for (NSInteger i=0; i&lt;&lt;#count#&gt;; i++) {
+    &lt;#statements#&gt;
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>994AB0F3-E280-4EA2-8BA9-F9DFF60465D9</string>
+	<string>B24D136E-6996-4672-92E4-F75D1A557A6A</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>A For loop incrementing a local variable</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>#define PO</string>
+	<string>Incrementing For Loop</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

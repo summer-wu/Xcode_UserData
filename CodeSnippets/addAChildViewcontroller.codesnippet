@@ -3,19 +3,25 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>definePO</string>
+	<string>childController</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>TopLevel</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>#define PO(x) NSLog(@"%s = %@", #x, x);</string>
+	<string>UIViewController *newController = &lt;#newController#&gt;;
+    [newController willMoveToParentViewController:self];
+    [self addChildViewController:newController];
+    [self.contentView addSubview:newController.view];
+    [newController didMoveToParentViewController:self];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>994AB0F3-E280-4EA2-8BA9-F9DFF60465D9</string>
+	<string>8642C81E-858E-4855-B810-B5474620C192</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Adds a child ViewController to self</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>#define PO</string>
+	<string>Add a child ViewController</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

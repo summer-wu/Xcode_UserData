@@ -3,19 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>definePO</string>
+	<string>dis</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>TopLevel</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>#define PO(x) NSLog(@"%s = %@", #x, x);</string>
+	<string>    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+    
+    });</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>994AB0F3-E280-4EA2-8BA9-F9DFF60465D9</string>
+	<string>19B2B93F-C894-43C2-A7E5-58191E12331F</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>dispatch in background</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>#define PO</string>
+	<string>dispatch in background</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

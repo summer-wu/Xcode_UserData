@@ -3,19 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>definePO</string>
+	<string>key</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>#define PO(x) NSLog(@"%s = %@", #x, x);</string>
+	<string>"&lt;#keyName#&gt;" = "&lt;#value#&gt;";</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>994AB0F3-E280-4EA2-8BA9-F9DFF60465D9</string>
+	<string>F4F04ED0-ABB8-4A0F-A00E-E9C82EF5A611</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.XcodeStrings</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>A localization key and its value</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>#define PO</string>
+	<string>Key-Value Pair for Localization</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

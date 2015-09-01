@@ -3,19 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>definePO</string>
+	<string>pragma</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>TopLevel</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>#define PO(x) NSLog(@"%s = %@", #x, x);</string>
+	<string>#pragma mark &lt;#comment#&gt;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>994AB0F3-E280-4EA2-8BA9-F9DFF60465D9</string>
+	<string>A2471AEB-B838-45B3-A95E-EB936059649A</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Add a new pragma mark</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>#define PO</string>
+	<string>Pragma mark</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

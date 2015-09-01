@@ -3,19 +3,29 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>definePO</string>
+	<string>singleton</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>TopLevel</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>#define PO(x) NSLog(@"%s = %@", #x, x);</string>
+	<string>+ (instancetype)&lt;#sharedInstance#&gt; {
+    static id &lt;#_sharedInstance#&gt; = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&amp;onceToken, ^{
+        &lt;#_sharedInstance#&gt; = [[self alloc] init];
+    });
+
+    return &lt;#_sharedInstance#&gt;;
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>994AB0F3-E280-4EA2-8BA9-F9DFF60465D9</string>
+	<string>4526AE01-3248-432C-B56F-C7E4CEB74468</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>A singleton implementation using dispatch_once</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>#define PO</string>
+	<string>singleton</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -3,19 +3,34 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>definePO</string>
+	<string>rrr</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>TopLevel</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>#define PO(x) NSLog(@"%s = %@", #x, x);</string>
+	<string>#pragma mark - Network Request Delegate
+
+- (void)requestFinished:(BaseRequest *)request {
+
+}
+
+- (void)requestFailed:(BaseRequest *)request {
+
+}
+
+- (void)clearRequest {
+
+}
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>994AB0F3-E280-4EA2-8BA9-F9DFF60465D9</string>
+	<string>F2945E28-8E0F-4E27-8840-F40C4E7E7E5D</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Network Request Delegate</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>#define PO</string>
+	<string>Network Request Delegate</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

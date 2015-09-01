@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>mas_remake</string>
+	<string>alloc</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>[&lt;#view#&gt; mas_remakeConstraints:^(MASConstraintMaker *make){
-    &lt;#code#&gt;
-}];</string>
+	<string>&lt;#ClassName#&gt; *&lt;#variableName#&gt; = [[&lt;#ClassName#&gt; alloc] init];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>53203A7C-0C2C-493C-9CAE-8900D9AB68A8</string>
+	<string>1784BA4B-5292-4062-8955-AE56D450F89A</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>creates a new object from a given class</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Masonry Constraint Remake</string>
+	<string>Initalize an object</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
