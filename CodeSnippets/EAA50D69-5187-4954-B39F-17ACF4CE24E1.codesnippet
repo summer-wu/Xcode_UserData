@@ -7,18 +7,19 @@
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    NSLog(@"%@",[[[UIApplication sharedApplication]keyWindow] performSelector:@selector(_autolayoutTrace)]);//in code
-po [[self view] recursiveDescription];
-po [[self view] _autolayoutTrace];//in lldb
-</string>
+	<string>        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
+            for (NSNumber *sizeNumber in sizes) {
+                [AddonManager cacheThumbnail:svgPath AddonDescription:addon_description ThumbnailSize:[sizeNumber integerValue]];
+            }
+        });</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>CE409225-4EE8-484F-9013-B78B2ECA27A4</string>
+	<string>EAA50D69-5187-4954-B39F-17ACF4CE24E1</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>_autolayoutTrace/recursiveDescription</string>
+	<string>dispatch_async in global_queue</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>_autolayoutTrace/recursiveDescription</string>
+	<string>dispatch_async in global_queue</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

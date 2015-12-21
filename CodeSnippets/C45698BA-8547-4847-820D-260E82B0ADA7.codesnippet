@@ -2,23 +2,23 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>staticconst</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    NSLog(@"%@",[[[UIApplication sharedApplication]keyWindow] performSelector:@selector(_autolayoutTrace)]);//in code
-po [[self view] recursiveDescription];
-po [[self view] _autolayoutTrace];//in lldb
-</string>
+	<string>    static const NSTimeInterval kAnimationDuration=0.3;
+    static NSString *const SBStyle2 = @"SBStyle2";</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>CE409225-4EE8-484F-9013-B78B2ECA27A4</string>
+	<string>C45698BA-8547-4847-820D-260E82B0ADA7</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>_autolayoutTrace/recursiveDescription</string>
+	<string>static const NSString *</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>_autolayoutTrace/recursiveDescription</string>
+	<string>static const NSString *</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -7,18 +7,21 @@
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    NSLog(@"%@",[[[UIApplication sharedApplication]keyWindow] performSelector:@selector(_autolayoutTrace)]);//in code
-po [[self view] recursiveDescription];
-po [[self view] _autolayoutTrace];//in lldb
-</string>
+	<string>    if([[NSThread currentThread] isEqual: [NSThread mainThread]]){
+        [self changeActivityIndicatorOnIndex:idx];
+    }else{
+        dispatch_sync(dispatch_get_main_queue(), ^{
+             [self changeActivityIndicatorOnIndex:idx];
+        });
+    }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>CE409225-4EE8-484F-9013-B78B2ECA27A4</string>
+	<string>3531BFF9-4AE5-4CB4-A855-290B3CE8D54A</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>_autolayoutTrace/recursiveDescription</string>
+	<string>dispatch_sync防止死锁</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>_autolayoutTrace/recursiveDescription</string>
+	<string>dispatch_sync in mainQueue</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

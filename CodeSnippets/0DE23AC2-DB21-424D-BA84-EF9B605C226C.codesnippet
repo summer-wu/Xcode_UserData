@@ -2,23 +2,35 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>try-catch-throw</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    NSLog(@"%@",[[[UIApplication sharedApplication]keyWindow] performSelector:@selector(_autolayoutTrace)]);//in code
-po [[self view] recursiveDescription];
-po [[self view] _autolayoutTrace];//in lldb
-</string>
+	<string>@try {
+    NSException* myException = [NSException
+                                exceptionWithName:@"FileNotFoundException"
+                                reason:@"File Not Found on System"
+                                userInfo:nil];
+    @throw myException;
+}
+@catch (NSException *exception) {
+    NSLog(@"%@",exception);
+}
+@finally {
+    NSLog(@"finally");
+}
+NSLog(@"out try-catch ");</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>CE409225-4EE8-484F-9013-B78B2ECA27A4</string>
+	<string>0DE23AC2-DB21-424D-BA84-EF9B605C226C</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>_autolayoutTrace/recursiveDescription</string>
+	<string>try-catch-throw</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>_autolayoutTrace/recursiveDescription</string>
+	<string>try-catch-throw</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

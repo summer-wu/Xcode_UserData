@@ -20,7 +20,7 @@
 				<key>GroupedAlternate</key>
 				<string>NO</string>
 				<key>Keyboard Shortcut</key>
-				<string>@</string>
+				<string>@</string>
 				<key>Navigation</key>
 				<string>NO</string>
 				<key>Title</key>
@@ -40,7 +40,7 @@
 				<key>GroupedAlternate</key>
 				<string>NO</string>
 				<key>Keyboard Shortcut</key>
-				<string>^~@</string>
+				<string>^~@</string>
 				<key>Navigation</key>
 				<string>NO</string>
 				<key>Title</key>
@@ -60,7 +60,7 @@
 				<key>GroupedAlternate</key>
 				<string>YES</string>
 				<key>Keyboard Shortcut</key>
-				<string>$@</string>
+				<string>$@</string>
 				<key>Navigation</key>
 				<string>NO</string>
 				<key>Title</key>

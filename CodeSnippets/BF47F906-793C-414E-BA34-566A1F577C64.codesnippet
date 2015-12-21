@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>//http://stackoverflow.com/questions/2622017/suppressing-deprecated-warnings-in-xcode
+#define SILENCE_DEPRECATION(expr)                                   \
+do {                                                                \
+_Pragma("clang diagnostic push")                                    \
+_Pragma("clang diagnostic ignored \"-Wdeprecated-declarations\"")   \
+expr;                                                               \
+_Pragma("clang diagnostic pop")                                     \
+} while(0)</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>BF47F906-793C-414E-BA34-566A1F577C64</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>SILENCE_DEPRECATION</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>SILENCE_DEPRECATION</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

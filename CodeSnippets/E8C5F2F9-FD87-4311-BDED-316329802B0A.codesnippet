@@ -4,21 +4,18 @@
 <dict>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    NSLog(@"%@",[[[UIApplication sharedApplication]keyWindow] performSelector:@selector(_autolayoutTrace)]);//in code
-po [[self view] recursiveDescription];
-po [[self view] _autolayoutTrace];//in lldb
-</string>
+	<string>@dynamic description; </string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>CE409225-4EE8-484F-9013-B78B2ECA27A4</string>
+	<string>E8C5F2F9-FD87-4311-BDED-316329802B0A</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>_autolayoutTrace/recursiveDescription</string>
+	<string>@dynamic description; </string>
 	<key>IDECodeSnippetTitle</key>
-	<string>_autolayoutTrace/recursiveDescription</string>
+	<string>@dynamic description; </string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

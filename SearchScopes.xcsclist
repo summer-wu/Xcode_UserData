@@ -22,8 +22,23 @@
       uuid = "24E80404-CF8A-41BC-BFCE-548B76D1E6BE">
    </Scope>
    <Scope
-      name = "storyboar"
+      name = "storyboard"
       predicate = "name CONTAINS &quot;storyboard&quot;"
       uuid = "9E39A702-3D3C-4FBC-B497-2092DC1F68EA">
+   </Scope>
+   <Scope
+      name = "test.xib"
+      predicate = "name == &quot;test.xib&quot;"
+      uuid = "5349664D-CFD3-4BB0-8DED-441D39B6AC24">
+   </Scope>
+   <Scope
+      name = ".strings"
+      predicate = "name.pathExtension == &quot;strings&quot;"
+      uuid = "67B5BBD8-9395-4B44-B6BF-2D7E875F01F5">
+   </Scope>
+   <Scope
+      name = "Manager.h"
+      predicate = "name ENDSWITH &quot;Manager.h&quot;"
+      uuid = "ABBE0E32-FD21-409E-8162-FA589298DB4F">
    </Scope>
 </SearchScopes>

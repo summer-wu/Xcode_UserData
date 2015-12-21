@@ -6,10 +6,10 @@
 	<string>defineBlog</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>TopLevel</string>
+		<string>Preprocessor</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>#define BLog(formatString, ...) NSLog((@"%s " formatString), __PRETTY_FUNCTION__, ##__VA_ARGS__);</string>
+	<string>define BLog(formatString, ...) NSLog((@"%s " formatString), __PRETTY_FUNCTION__, ##__VA_ARGS__);</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>76559C6D-99A1-44B7-8B92-A1E0C44C4094</string>
 	<key>IDECodeSnippetLanguage</key>

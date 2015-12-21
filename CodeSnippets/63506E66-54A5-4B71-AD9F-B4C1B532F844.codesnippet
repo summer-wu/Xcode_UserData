@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>segueCode</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>FriendDetailViewController * destVC= [kMainStoryboard instantiateViewControllerWithIdentifier:@"FriendDetailViewController"];//不能直接alloc init，要用storyboard中的数据
+//在代码中不能创建UIStoryboardPushSegue。只能创建子类覆盖perform方法执行push，或者用performHandler就不用创建segue子类了。
+UIStoryboardSegue * seg=[UIStoryboardSegue segueWithIdentifier:@"toFriendDetailViewController" source:self destination:destVC performHandler:^{
+    [self.navigationController pushViewController:destVC animated:YES];
+}];
+[self prepareForSegue:seg sender:sender];
+[seg perform]; //会执行performHandler中的代码。</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>63506E66-54A5-4B71-AD9F-B4C1B532F844</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>segue</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>segue</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -9,10 +9,14 @@
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>#pragma clang diagnostic push
+	<string>//http://clang.llvm.org/docs/UsersManual.html 可以查到所有的warning
+//要ignore哪个命令行参数，可以build log详情查看clang -x 后面跟的参数
+
+#pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated-declarations"
 #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
 #pragma clang diagnostic ignored "-Wundeclared-selector"
+#pragma clang diagnostic ignored "-Wformat" //format specifies type 'int' but the argument has type 'long' [-Wformat]
 
     return [string sizeWithFont:font constrainedToSize:constrainedSize lineBreakMode:lineBreakMode];
 #pragma clang diagnostic pop</string>

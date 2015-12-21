@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>constant</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>//coding学来的
+#define kKeyWindow [UIApplication sharedApplication].keyWindow
+#define kScreen_Bounds [UIScreen mainScreen].bounds
+#define kScreen_Height [UIScreen mainScreen].bounds.size.height
+#define kScreen_Width [UIScreen mainScreen].bounds.size.width
+#define kTipAlert(_S_, ...)     [[[UIAlertView alloc] initWithTitle:@"提示" message:[NSString stringWithFormat:(_S_), ##__VA_ARGS__] delegate:nil cancelButtonTitle:@"知道了" otherButtonTitles:nil] show]
+#define kTipToast(_S_) [kKeyWindow makeToast:(_S_) duration:3.0 position:CSToastPositionCenter];
+#define kAppDelegate (AppDelegate*)[UIApplication sharedApplication].delegate
+#define PATH_DOCUMENTDIR NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0]
+#define PATH_CACHESDIR NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES)[0]
+#define PATH_TEMPDIRWITHSLASH NSTemporaryDirectory() //这个最后面有斜线
+#define PATH_HOMEDIR NSHomeDirectory()
+#define PATH_PREFERENCEDIR NSSearchPathForDirectoriesInDomains(NSPreferencePanesDirectory, NSUserDomainMask, YES)[0]
+#define PATH_NSBundle [[NSBundle bundleForClass:[self class]] resourcePath] //[NSBundle mainBundle].bundlePath
+#define FILE_CACHEFILENAME [NSString stringWithFormat:@"%s.plist",__PRETTY_FUNCTION__] //缓存文件名
+#define FILE_CACHEFILE_FULL_PATH [PATH_CACHESDIR stringByAppendingPathComponent:FILE_CACHEFILENAME] //缓存文件的文件路径</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>87497D0D-F940-4A61-8E5B-679E5E0FC470</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>constant</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>constant常量宏</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
