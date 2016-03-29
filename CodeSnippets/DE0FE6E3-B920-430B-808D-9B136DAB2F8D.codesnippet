@@ -3,19 +3,26 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>www</string>
+	<string>removeObject</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassInterfaceMethods</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (weak, nonatomic) &lt;#type#&gt; *&lt;#name#&gt;;</string>
+	<string>for (int i=inputArray.count-1; i&gt;-1; i--) {
+    NSString *item = [inputArray objectAtIndex:i];
+    if ([item rangeOfString:s].location == NSNotFound) {
+        [inputArray removeObject:item];
+    }
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>E10BEAE2-7433-4892-9314-95759F276395</string>
+	<string>DE0FE6E3-B920-430B-808D-9B136DAB2F8D</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>fori Remove object from NSMutableArray</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>TQ Property declaration - weak</string>
+	<string>fori Remove object from NSMutableArray</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

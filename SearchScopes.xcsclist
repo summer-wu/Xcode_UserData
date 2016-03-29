@@ -41,4 +41,9 @@
       predicate = "name ENDSWITH &quot;Manager.h&quot;"
       uuid = "ABBE0E32-FD21-409E-8162-FA589298DB4F">
    </Scope>
+   <Scope
+      name = "troller.m"
+      predicate = "name ENDSWITH &quot;troller.m&quot;"
+      uuid = "DE431461-B213-4E42-A38C-DC73E601C0A2">
+   </Scope>
 </SearchScopes>

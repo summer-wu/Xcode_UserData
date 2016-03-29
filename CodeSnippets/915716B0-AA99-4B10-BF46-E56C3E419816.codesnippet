@@ -17,6 +17,7 @@
 #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
 #pragma clang diagnostic ignored "-Wundeclared-selector"
 #pragma clang diagnostic ignored "-Wformat" //format specifies type 'int' but the argument has type 'long' [-Wformat]
+#pragma clang diagnostic ignored "-Wshorten-64-to-32"//类型转换的warning
 
     return [string sizeWithFont:font constrainedToSize:constrainedSize lineBreakMode:lineBreakMode];
 #pragma clang diagnostic pop</string>

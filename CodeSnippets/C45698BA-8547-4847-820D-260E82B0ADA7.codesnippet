@@ -3,14 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>staticconst</string>
+	<string>staticextern</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    static const NSTimeInterval kAnimationDuration=0.3;
-    static NSString *const SBStyle2 = @"SBStyle2";</string>
+	<string>extern NSString *const kStringVar;
+NSString *const kStringVar = @"SBStyle2";
+
+static const NSTimeInterval kAnimationDuration=0.3;
+static NSString *const SBStyle2 = @"SBStyle2";</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>C45698BA-8547-4847-820D-260E82B0ADA7</string>
 	<key>IDECodeSnippetLanguage</key>
@@ -18,7 +21,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string>static const NSString *</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>static const NSString *</string>
+	<string>static extern const NSString *</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -3,23 +3,25 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>dis</string>
+	<string>copyWithZone</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    dispatch_async(dispatch_get_main_queue(), ^{
-
-    });</string>
+	<string>- (id)copyWithZone:(NSZone *)zone{
+    HashModel *model = [[[self class] allocWithZone:zone] init];
+    model.customeHash = self.customeHash;
+    return model;
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>1B268946-74B0-41AB-8923-243572E93099</string>
+	<string>D675B2FD-59F5-4F27-88EF-0F4208AED8A6</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>GCD:dispatch_asyc in main queue</string>
+	<string>copyWithZone</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>dispatch_asyc in main queue</string>
+	<string>copyWithZone</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

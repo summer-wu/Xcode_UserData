@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#import "AMapPOISearchResponse+page.h"
+#import &lt;objc/runtime.h&gt;
+
+static char AMapPOISearchResponsePage;
+
+@implementation AMapPOISearchResponse (page)
+- (void)setPage:(NSNumber *)page {
+    [self willChangeValueForKey:@"page"];
+    objc_setAssociatedObject(self, &amp;AMapPOISearchResponsePage, page, OBJC_ASSOCIATION_COPY_NONATOMIC);
+    [self didChangeValueForKey:@"page"];
+
+}
+
+- (NSNumber *)page {
+    return objc_getAssociatedObject(self,&amp;AMapPOISearchResponsePage);
+}
+@end</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>AEEAB7CA-9473-44AA-B7B8-9C40C1927898</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>objc_getAssociatedObject</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>objc_setAssociatedObject</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

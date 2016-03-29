@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (void)describeCLLocation:(CLLocation *)l{
+    NSMutableDictionary *md = [NSMutableDictionary dictionary];
+    md[@"0coordinate.longitude"] = @(l.coordinate.longitude);
+    md[@"1coordinate.latitude"] = @(l.coordinate.latitude);
+    md[@"2altitude"] = @(l.altitude);
+    md[@"3horizontalAccuracy"] = @(l.horizontalAccuracy);
+    md[@"4verticalAccuracy"] = @(l.verticalAccuracy);
+    md[@"5floor.level"] = @(l.floor.level);//楼层
+    md[@"6timestamp"] = l.timestamp;
+    md[@"7speed"]= @(l.speed);
+    md[@"8course"] = @(l.course);//航向，前进方向。用度表示。
+//    md[@"9description"] = l.description;
+    NSLog(@"%@",md);
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>C90847B4-541D-45A2-AADC-14952CB687F4</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>describeCLLocation</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>describeCLLocation</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -2,28 +2,23 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>tq_extension</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>TopLevel</string>
+		<string>StringOrComment</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@interface &lt;#name#&gt;()
-
-@end
-</string>
+	<string>NSArray* reversed = [[myArray reverseObjectEnumerator] allObjects];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>8D68DFE7-69E7-46E6-B4F0-F3C5EEC1BC12</string>
+	<string>3EC67CFB-137D-4B8B-BA9A-343C107A43FB</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>tq add interface() extension</string>
+	<string>NSArray* reversed = [[myArray reverseObjectEnumerator] allObjects];</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>tq add interface() extension</string>
+	<string>reverse Array</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
