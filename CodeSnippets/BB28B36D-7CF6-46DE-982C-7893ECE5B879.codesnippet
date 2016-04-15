@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#pragma mark coder
+
+#define MacroDecodeObjectForKey(key) self.key = [decoder decodeObjectForKey:@#key];
+- (id)initWithCoder:(NSCoder *)decoder {
+    self = [super init];
+    if (self) {
+        MacroDecodeObjectForKey(lbs_raw_gps)
+        MacroDecodeObjectForKey(lbs_record_type)
+        MacroDecodeObjectForKey(lbs_locality_name)
+        MacroDecodeObjectForKey(lbs_locality_id)
+        MacroDecodeObjectForKey(lbs_locality_gps)
+        MacroDecodeObjectForKey(lbs_country_shortname)
+        MacroDecodeObjectForKey(lbs_place_name)
+        MacroDecodeObjectForKey(lbs_place_id)
+        MacroDecodeObjectForKey(lbs_place_types)
+        MacroDecodeObjectForKey(lbs_place_gps)
+        MacroDecodeObjectForKey(lbs_source)
+    }
+    return self;
+}
+
+/**
+ -[UploadManager saveStoriesToDisk]会将信息保存到磁盘，包括转发链信息、packsArray
+ */
+#define MacroEncodeObjectForKey(key) [coder encodeObject:self.key forKey:@#key];
+- (void)encodeWithCoder:(NSCoder *)coder {
+    MacroEncodeObjectForKey(lbs_raw_gps)
+    MacroEncodeObjectForKey(lbs_record_type)
+    MacroEncodeObjectForKey(lbs_locality_name)
+    MacroEncodeObjectForKey(lbs_locality_id)
+    MacroEncodeObjectForKey(lbs_locality_gps)
+    MacroEncodeObjectForKey(lbs_country_shortname)
+    MacroEncodeObjectForKey(lbs_place_name)
+    MacroEncodeObjectForKey(lbs_place_id)
+    MacroEncodeObjectForKey(lbs_place_types)
+    MacroEncodeObjectForKey(lbs_place_gps)
+    MacroEncodeObjectForKey(lbs_source)
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>BB28B36D-7CF6-46DE-982C-7893ECE5B879</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>MacroEncodeObjectForKey</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>NSCoding MacroDecodeObjectForKey</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

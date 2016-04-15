@@ -7,22 +7,19 @@
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-for (NSNumber *sizeNumber in sizes) {
-    [AddonManager cacheThumbnail:svgPath AddonDescription:addon_description ThumbnailSize:[sizeNumber integerValue]];
-}
-});</string>
+	<string>[self.player replaceCurrentItemWithPlayerItem:[AVPlayerItem playerItemWithURL:url]];
+        _playingURL = self.timelineModel.video_url;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>EAA50D69-5187-4954-B39F-17ACF4CE24E1</string>
+	<string>8BA6F838-DF12-498B-BB34-0357D56CDB04</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>dispatch_async in global_queue</string>
+	<string>用来快速查找代码的，不是为了复用</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>dispatch_async in global_queue</string>
+	<string>replaceCurrentItemWithPlayerItem</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

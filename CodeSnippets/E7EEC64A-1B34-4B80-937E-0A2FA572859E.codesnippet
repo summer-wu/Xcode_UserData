@@ -4,18 +4,26 @@
 <dict>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>StringOrComment</string>
+		<string>ClassInterfaceMethods</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>NSArray* reversed = [[myArray reverseObjectEnumerator] allObjects];</string>
+	<string>@property (nonatomic,copy) void(^didSelectedBlock)(NSString *previewStr);//block in property，two()
+
+//block in method,three()
+- (NSURLSessionDataTask *)getReverseGeocodeWithPoint:(CLLocationCoordinate2D)point
+success:(void (^)(NSURLSessionDataTask *task, id responseObject))success
+failure:(void (^)(NSURLSessionDataTask *task, NSError *error))failure;
+
+
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>3EC67CFB-137D-4B8B-BA9A-343C107A43FB</string>
+	<string>E7EEC64A-1B34-4B80-937E-0A2FA572859E</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>NSArray* reversed = [[myArray reverseObjectEnumerator] allObjects];</string>
+	<string>block property,method property</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>reverse Array</string>
+	<string>block property,method property</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
