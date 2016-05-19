@@ -7,16 +7,16 @@
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>[self.player replaceCurrentItemWithPlayerItem:[AVPlayerItem playerItemWithURL:url]];
-        _playingURL = self.timelineModel.video_url;</string>
+	<string>CGContextTranslateCTM(context,0,height);//首先移动原点的位置
+CGContextScaleCTM(context, 1.0, -1.0);//然后转换y轴</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>8BA6F838-DF12-498B-BB34-0357D56CDB04</string>
+	<string>CE31F635-04B4-429A-8AB3-95D5D1A7E72E</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>用来快速查找代码的，不是为了复用</string>
+	<string>CG原点转换为UIKIt原点</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>replaceCurrentItemWithPlayerItem</string>
+	<string>changeCTM</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

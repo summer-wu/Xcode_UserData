@@ -7,16 +7,18 @@
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>[self.player replaceCurrentItemWithPlayerItem:[AVPlayerItem playerItemWithURL:url]];
-        _playingURL = self.timelineModel.video_url;</string>
+	<string>    NSTimeInterval startInt = [NSDate timeIntervalSinceReferenceDate];
+    NSTimeInterval duration = [NSDate timeIntervalSinceReferenceDate] - startInt;
+    NSLog(@"cellForItemAtIndexPath cost time:%.0f ms",duration*1000);
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>8BA6F838-DF12-498B-BB34-0357D56CDB04</string>
+	<string>22588AB6-29D7-458D-900A-70D235EE3A59</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>用来快速查找代码的，不是为了复用</string>
+	<string>endInterval-startInterval</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>replaceCurrentItemWithPlayerItem</string>
+	<string>costTime</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

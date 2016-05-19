@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>Preprocessor</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>//Suppressing deprecated warning。这是在代码层面设置。在 build setting-Apple LLVM6.1 Warnings All Language第二个就是DEPRECATED_FUNCTIONS，可以改为NO。这两个地方设置之后，editor中都不再warning。
+//#pragma clang diagnostic push
+//#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+//http://stackoverflow.com/questions/2622017/suppressing-deprecated-warnings-in-xcode
+//https://gcc.gnu.org/onlinedocs/cpp/Pragmas.html C99中_Pragma是关键字
+#define SILENCE_DEPRECATION(expr)                                   \
+do {                                                                \
+_Pragma("clang diagnostic push")                                    \
+_Pragma("clang diagnostic ignored \"-Wdeprecated-declarations\"")   \
+expr;                                                               \
+_Pragma("clang diagnostic pop")                                     \
+} while(0)</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>7FE74798-91D6-4CF9-BACC-A81EE8749404</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>SILENCE_DEPRECATION</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

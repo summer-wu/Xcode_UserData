@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>Preprocessor</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#import &lt;mach/mach.h&gt;
+#import &lt;mach/mach_host.h&gt;
+@implementation ViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    [NSTimer scheduledTimerWithTimeInterval:0.5 target:self selector:@selector(print_free_memory) userInfo:nil repeats:YES];
+}
+
+- (void)print_free_memory{
+    mach_port_t host_port;
+    mach_msg_type_number_t host_size;
+    vm_size_t pagesize;
+    host_port = mach_host_self();
+    host_size = sizeof(vm_statistics_data_t) / sizeof(integer_t);
+    host_page_size(host_port, &amp;pagesize);
+    vm_statistics_data_t vm_stat;
+    if (host_statistics(host_port, HOST_VM_INFO, (host_info_t)&amp;vm_stat, &amp;host_size) != KERN_SUCCESS) {
+        NSLog(@"Failed to fetch vm statistics");
+    }
+    /* Stats in bytes */
+    natural_t mem_used = (vm_stat.active_count +
+                          vm_stat.inactive_count +
+                          vm_stat.wire_count) * pagesize;
+    natural_t mem_free = vm_stat.free_count * pagesize;
+    natural_t mem_total = mem_used + mem_free;
+    NSLog(@"used: %uMB free: %uMB total: %uMB", mem_used/1024/1024, mem_free/1024/1024, mem_total/1024/1024);
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>374CE941-9315-427B-A707-F7B65796674A</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>print_free_memory</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

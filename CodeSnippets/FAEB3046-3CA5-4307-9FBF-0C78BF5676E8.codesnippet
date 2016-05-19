@@ -4,19 +4,31 @@
 <dict>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>[self.player replaceCurrentItemWithPlayerItem:[AVPlayerItem playerItemWithURL:url]];
-        _playingURL = self.timelineModel.video_url;</string>
+	<string>static int countInMemory = 0;
+- (instancetype)initWithFrame:(CGRect)frame{
+    self = [super initWithFrame:frame];
+    if (self) {
+        countInMemory += 1;
+        NSLog(@"cell count in memory:%d",countInMemory);
+    }
+    return self;
+}
+
+- (void)dealloc{
+    countInMemory -= 1;
+    NSLog(@"cell count in memory:%d",countInMemory);
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>8BA6F838-DF12-498B-BB34-0357D56CDB04</string>
+	<string>FAEB3046-3CA5-4307-9FBF-0C78BF5676E8</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>用来快速查找代码的，不是为了复用</string>
+	<string>countInMemory</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>replaceCurrentItemWithPlayerItem</string>
+	<string>countInMemory</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
