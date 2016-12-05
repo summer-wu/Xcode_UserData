@@ -7,17 +7,18 @@
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>NSTimeInterval startInt = [NSDate timeIntervalSinceReferenceDate];
-NSLog(@"XXX cost time:%.3f ms",([NSDate timeIntervalSinceReferenceDate] - startInt)*1000);
-</string>
+	<string>UIGraphicsBeginImageContextWithOptions(size, NO, 1.0);
+CGContextRef ctx = UIGraphicsGetCurrentContext();
+//[self drawRect:rect];CG绘制方法
+UIImage *resultImage = UIGraphicsGetImageFromCurrentImageContext();
+UIGraphicsEndImageContext();
+return resultImage;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>22588AB6-29D7-458D-900A-70D235EE3A59</string>
+	<string>5481927D-8EE1-4C50-8CEB-89556047EBEF</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
-	<key>IDECodeSnippetSummary</key>
-	<string>endInterval-startInterval</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>costTime</string>
+	<string>UIGraphicsBeginImageContext</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

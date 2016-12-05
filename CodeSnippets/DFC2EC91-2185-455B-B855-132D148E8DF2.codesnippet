@@ -7,17 +7,19 @@
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>NSTimeInterval startInt = [NSDate timeIntervalSinceReferenceDate];
-NSLog(@"XXX cost time:%.3f ms",([NSDate timeIntervalSinceReferenceDate] - startInt)*1000);
-</string>
+	<string>    //一行居中，多行局左
+    BOOL onlyOneLine = textLabelFrame.size.height &lt; kFont.lineHeight*1.5;//小于1.5倍pointSize就应该是多行
+    if (onlyOneLine){
+        self.textLabel.textAlignment = NSTextAlignmentCenter;
+    } else {
+        self.textLabel.textAlignment = NSTextAlignmentLeft;
+    }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>22588AB6-29D7-458D-900A-70D235EE3A59</string>
+	<string>DFC2EC91-2185-455B-B855-132D148E8DF2</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
-	<key>IDECodeSnippetSummary</key>
-	<string>endInterval-startInterval</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>costTime</string>
+	<string>一行居中，多行局左</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

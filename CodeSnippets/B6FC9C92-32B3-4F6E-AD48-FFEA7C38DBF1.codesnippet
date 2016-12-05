@@ -4,20 +4,18 @@
 <dict>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>TopLevel</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>NSTimeInterval startInt = [NSDate timeIntervalSinceReferenceDate];
-NSLog(@"XXX cost time:%.3f ms",([NSDate timeIntervalSinceReferenceDate] - startInt)*1000);
-</string>
+	<string>#ifndef YY_CLAMP // return the clamped value
+#define YY_CLAMP(_x_, _low_, _high_)  (((_x_) &gt; (_high_)) ? (_high_) : (((_x_) &lt; (_low_)) ? (_low_) : (_x_)))
+#endif</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>22588AB6-29D7-458D-900A-70D235EE3A59</string>
+	<string>B6FC9C92-32B3-4F6E-AD48-FFEA7C38DBF1</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
-	<key>IDECodeSnippetSummary</key>
-	<string>endInterval-startInterval</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>costTime</string>
+	<string>YY_CLAMP</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

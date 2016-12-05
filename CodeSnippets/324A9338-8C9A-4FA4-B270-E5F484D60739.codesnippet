@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>typedef void (^QNRun)(void);
+
+void QNAsyncRun(QNRun run);
+
+void QNAsyncRunInMain(QNRun run);
+
+void QNAsyncRun(QNRun run) {
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^(void) {
+        run();
+    });
+}
+
+void QNAsyncRunInMain(QNRun run) {
+    dispatch_async(dispatch_get_main_queue(), ^(void) {
+        run();
+    });
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>324A9338-8C9A-4FA4-B270-E5F484D60739</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>QNAsyncRunInMain</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

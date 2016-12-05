@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#if !defined(_STRINGIFY)
+#define __STRINGIFY( _x )   # _x
+#define _STRINGIFY( _x )   __STRINGIFY( _x )
+#endif
+
+static const char * cstr = __STRINGIFY(
+                                       (
+                                        [
+                                         {
+                                             "id": 271,
+                                             "host_user_id": 362,
+                                             "created_at": "2016-05-27T06:44:28.000Z",
+                                             "updated_at": "2016-05-27T07:20:06.000Z",
+                                             "name": "123",
+                                             "published_at": 1464331468000000,
+                                             "update_time": "2016-05-27T07:20:06.000Z"
+                                         },
+                                         {
+                                             "id": 272,
+                                             "host_user_id": 362,
+                                             "created_at": "2016-05-27T07:20:00.000Z",
+                                             "updated_at": "2016-05-27T07:20:06.000Z",
+                                             "name": "456",
+                                             "published_at": 1464333600000000,
+                                             "update_time": "2016-05-27T07:20:06.000Z"
+                                         }
+                                         ]
+                                        )
+                                       );
+NSString *str = [NSString stringWithCString:cstr encoding:NSUTF8StringEncoding];
+str = [str stringByReplacingOccurrencesOfString:@"(" withString:@""];
+str = [str stringByReplacingOccurrencesOfString:@")" withString:@""];
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>6BB7DEB1-816A-4456-A772-D2CBC5B1A92A</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>_STRINGIFY</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>_STRINGIFY</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -4,20 +4,22 @@
 <dict>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>NSTimeInterval startInt = [NSDate timeIntervalSinceReferenceDate];
-NSLog(@"XXX cost time:%.3f ms",([NSDate timeIntervalSinceReferenceDate] - startInt)*1000);
-</string>
+	<string>+(UIColor *) randomColor
+{
+    CGFloat hue = ( arc4random() % 256 / 256.0 ); //0.0 to 1.0
+    CGFloat saturation = ( arc4random() % 128 / 256.0 ) + 0.5; // 0.5 to 1.0,away from white
+    CGFloat brightness = ( arc4random() % 128 / 256.0 ) + 0.5; //0.5 to 1.0,away from black
+    return [UIColor colorWithHue:hue saturation:saturation brightness:brightness alpha:1];
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>22588AB6-29D7-458D-900A-70D235EE3A59</string>
+	<string>22BBC8F7-C963-4AC1-87EB-BA491CEC4F99</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
-	<key>IDECodeSnippetSummary</key>
-	<string>endInterval-startInterval</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>costTime</string>
+	<string>randomColor</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -10,8 +10,10 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>define BLog(formatString, ...) NSLog((@"%s " formatString), __PRETTY_FUNCTION__, ##__VA_ARGS__);
-//覆盖掉
-#define BLog(formatString, ...) (1+1);
+//覆盖掉，void 0是参考的assert.h
+#define BLog(formatString, ...) (void(0));
+//增加时间和行号 #define BLog(formatString, ...) NSLog((@"%.3fs %s [Line %d]" formatString), [NSDate timeIntervalSinceReferenceDate], __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+
 </string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>76559C6D-99A1-44B7-8B92-A1E0C44C4094</string>

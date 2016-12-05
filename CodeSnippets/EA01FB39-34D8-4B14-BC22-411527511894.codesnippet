@@ -4,20 +4,24 @@
 <dict>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>NSTimeInterval startInt = [NSDate timeIntervalSinceReferenceDate];
-NSLog(@"XXX cost time:%.3f ms",([NSDate timeIntervalSinceReferenceDate] - startInt)*1000);
+	<string>#ifdef DEBUG
+#   define DLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+#else
+#   define DLog(...)
+#endif
+
+// ALog always displays output regardless of the DEBUG setting
+#define ALog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
 </string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>22588AB6-29D7-458D-900A-70D235EE3A59</string>
+	<string>EA01FB39-34D8-4B14-BC22-411527511894</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
-	<key>IDECodeSnippetSummary</key>
-	<string>endInterval-startInterval</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>costTime</string>
+	<string>DLog</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

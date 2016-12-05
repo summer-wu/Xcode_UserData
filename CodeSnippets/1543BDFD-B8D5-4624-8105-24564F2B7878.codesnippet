@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>
+//常用宏、path、file
+#define PATH_DOCUMENTDIR NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0]
+#define PATH_CACHESDIR NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES)[0]
+#define PATH_TEMPDIRWITHSLASH NSTemporaryDirectory() //这个最后面有斜线
+#define PATH_HOMEDIR NSHomeDirectory()
+#define PATH_PREFERENCEDIR NSSearchPathForDirectoriesInDomains(NSPreferencePanesDirectory, NSUserDomainMask, YES)[0]
+#define PATH_NSBundle [[NSBundle bundleForClass:[self class]] resourcePath] //[NSBundle mainBundle].bundlePath
+#define FILE_CACHEFILENAME [NSString stringWithFormat:@"%s.plist",__PRETTY_FUNCTION__] //缓存文件名
+#define FILE_CACHEFILE_FULL_PATH [PATH_CACHESDIR stringByAppendingPathComponent:FILE_CACHEFILENAME] //缓存文件的文件路径
+
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>1543BDFD-B8D5-4624-8105-24564F2B7878</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>PATH_XXXX</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

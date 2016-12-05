@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#import &lt;sys/time.h&gt;
+
+static inline void YYBenchmark(void (^block)(void), void (^complete)(double ms)) {
+    // &lt;QuartzCore/QuartzCore.h&gt; version
+    /*
+     extern double CACurrentMediaTime (void);
+     double begin, end, ms;
+     begin = CACurrentMediaTime();
+     block();
+     end = CACurrentMediaTime();
+     ms = (end - begin) * 1000.0;
+     complete(ms);
+     */
+
+    // &lt;sys/time.h&gt; version
+    struct timeval t0, t1;
+    gettimeofday(&amp;t0, NULL);
+    block();
+    gettimeofday(&amp;t1, NULL);
+    double ms = (double)(t1.tv_sec - t0.tv_sec) * 1e3 + (double)(t1.tv_usec - t0.tv_usec) * 1e-3;
+    complete(ms);
+}
+#define benchmarkBlock(block) YYBenchmark(block,^(double ms) {BLog(@"😄ms:%.0fms",ms);});//这个不好用，还需要加^(){}
+#define benchmarkCode(code) YYBenchmark(^(){code;},^(double ms) {BLog(@"😄ms:%.0fms",ms);});//这个更方便
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>712805BD-DC3B-47A8-A46C-1C7B98DB6D70</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>YYBenchmark</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

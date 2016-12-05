@@ -9,7 +9,9 @@
 		<string>Preprocessor</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>define PO(x) NSLog(@"%s = %@", #x, x);</string>
+	<string>define PO(x) NSLog(@"%s = %@", #x, x);//没有方法名
+#define PO(x) NSLog(@"%s %s = %@",__PRETTY_FUNCTION__, #x, x);//有方法名
+</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>994AB0F3-E280-4EA2-8BA9-F9DFF60465D9</string>
 	<key>IDECodeSnippetLanguage</key>

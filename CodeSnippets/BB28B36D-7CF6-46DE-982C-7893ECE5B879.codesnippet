@@ -9,9 +9,11 @@
 	<key>IDECodeSnippetContents</key>
 	<string>#pragma mark coder
 
+#ifndef MacroDecodeObjectForKey
 #define MacroDecodeObjectForKey(key) self.key = [decoder decodeObjectForKey:@#key];
+#endif
 - (id)initWithCoder:(NSCoder *)decoder {
-    self = [super init];
+    self = [super initWithCoder:decoder];
     if (self) {
         MacroDecodeObjectForKey(lbs_raw_gps)
         MacroDecodeObjectForKey(lbs_record_type)
@@ -31,7 +33,9 @@
 /**
  -[UploadManager saveStoriesToDisk]会将信息保存到磁盘，包括转发链信息、packsArray
  */
+#ifndef MacroEncodeObjectForKey
 #define MacroEncodeObjectForKey(key) [coder encodeObject:self.key forKey:@#key];
+#endif
 - (void)encodeWithCoder:(NSCoder *)coder {
     MacroEncodeObjectForKey(lbs_raw_gps)
     MacroEncodeObjectForKey(lbs_record_type)

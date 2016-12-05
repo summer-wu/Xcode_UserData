@@ -9,7 +9,10 @@
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+	<string>
+
+
+NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentsDirectory = [paths objectAtIndex:0];
 NSString *filePath = [documentsDirectory stringByAppendingPathComponent:@"&lt;#fileName#&gt;"];</string>
 	<key>IDECodeSnippetIdentifier</key>
